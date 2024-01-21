@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巧克力</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./load.css">
+    <style>
+        body {
+            background: #994533;
+        }
+
+        .carousel-item img {
+            height: 740px;
+            object-fit: cover;
+        }
+
+        .product {
+            height: 360px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+
+        .loadFixed {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 99999;
+        }
+
+        .loadIcon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- load 背景 -->
+    <div class="loadFixed">
+        <!-- load 小圖 -->
+        <div class="loadIcon la-square-loader la-3x">
+            <div></div>
+        </div>
+    </div>
+
+
+    <div class="container-lg bg-light">
+        <!-- 導覽列 -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">巧克力</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">關於我</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">聯絡我</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 輪播 -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- 1 -->
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1604514813560-1e4f5726db65?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>七見櫻堂手工巧克力甜點專賣</h5>
+                        <p>光看名字就能感受到濃濃日本味的七見櫻堂</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1604514813549-92e26bbae4f2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>BAC Cake&Sweets</h5>
+                        <p>BAC Cake&Sweets招牌特色就是「巧克力蛋糕」</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1582570675095-9b679953577e?q=80&w=2648&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Chuang Chocolate莊式巧克力</h5>
+                        <p>莊式巧克力屢屢在世界巧克力大賽（ICA）獲獎</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1582570674250-1d2e41c89860?q=80&w=2579&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>融化在口中的甜蜜滋味！</h5>
+                        <p>每當吃到好吃的巧克力，所有煩惱都會瞬間消失</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- 商品 -->
+        <div class="pb-3">
+            <h1 class="my-3">產品介紹</h1>
+            <!-- 產品 -->
+            <div class="row">
+                <!-- card -->
+                <div class="col-xl-6  col-md-12 col-sm-12 mb-3">
+                    <div class="product p-4"
+                        style="background-image:url(https://plus.unsplash.com/premium_photo-1668863373830-c50ca78857cb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;">
+                        <h4>经典牛奶巧克力滋味</h4>
+                        <div>独特口感，多重享受，黑巧克力期间限再不入手就没有喽</div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-xl-6  col-md-12 col-sm-12 mb-3">
+                    <div class="product p-4"
+                        style="background-image:url(https://plus.unsplash.com/premium_photo-1668863373830-c50ca78857cb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;">
+                        <h4>经典牛奶巧克力滋味</h4>
+                        <div>独特口感，多重享受，黑巧克力期间限再不入手就没有喽</div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-xl-6  col-md-12 col-sm-12 mb-3">
+                    <div class="product p-4"
+                        style="background-image:url(https://plus.unsplash.com/premium_photo-1668863373830-c50ca78857cb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;">
+                        <h4>经典牛奶巧克力滋味</h4>
+                        <div>独特口感，多重享受，黑巧克力期间限再不入手就没有喽</div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-xl-6  col-md-12 col-sm-12 mb-3">
+                    <div class="product p-4"
+                        style="background-image:url(https://plus.unsplash.com/premium_photo-1668863373830-c50ca78857cb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;">
+                        <h4>经典牛奶巧克力滋味</h4>
+                        <div>独特口感，多重享受，黑巧克力期间限再不入手就没有喽</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- 服務 -->
+        <div class="pb-3">
+            <h1 class="my-3">產品介紹</h1>
+            <!-- 內容 -->
+            <div class="row">
+                <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1610450949065-1f2841536c88?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">像一個森林王子出現在3點一刻的下午茶餐上</h5>
+                            <p class="card-text">確認過眼神，是想吃了你的感覺。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1545396635-f4865ca1448b?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">心夾滿了浪漫與熱情</h5>
+                            <p class="card-text">唇確認過途經過齒間的節奏是熱戀的感覺</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                    <div class="card ">
+                        <img src="https://images.unsplash.com/photo-1587271644048-2fbb187de8d8?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">多少人為了巧克力的香，忘了巧克力的苦</h5>
+                            <p class="card-text">加點糖就成為舌尖最佳的伴侶</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 聯絡我們 -->
+        <div class="pb-3">
+            <h1 class="my-3">聯絡我們</h1>
+            <!-- 內容 -->
+            <form action="" id="contact-form">
+                <input type="hidden" name="contact_number">
+                <!-- 姓名 -->
+                <div class="mb-3 row">
+                    <label for="inputName" class="col-sm-4 col-form-label text-center">姓名<span
+                            class="text-danger">*</span></label>
+                    <div class="col-sm-8">
+                        <input type="text" name="inputName" class="form-control" id="inputName" placeholder="請輸入您的姓名"
+                            required>
+                    </div>
+                </div>
+                <!-- email -->
+                <div class="mb-3 row">
+                    <label for="inputEmail" class="col-sm-4 col-form-label text-center">信箱<span
+                            class="text-danger">*</span></label>
+                    <div class="col-sm-8">
+                        <input type="email" name="inputEmail" class="form-control" id="inputEmail"
+                            placeholder="boxis@xxx.com" required>
+                    </div>
+                </div>
+                <!-- 建議 -->
+                <div class="mb-3 row">
+                    <label for="inputTextarea" class="col-sm-4 col-form-label text-center">建議</label>
+                    <div class="col-sm-8">
+                        <textarea name="message" id="inputTextarea" rows="5" class="w-100 form-control"
+                            placeholder="請輸入建議"></textarea>
+                    </div>
+                </div>
+                <!-- 送出 -->
+                <div class="text-center">
+                    <button type="reset" class="btn btn-primary">清除</button>
+                    <button type="submit" class="btn btn-primary">送出</button>
+                </div>
+            </form>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('user_3nPuTrcITWfd1roaPoaB0');
+        })();
+    </script>
+    <script type="text/javascript">
+        $('.loadFixed').fadeOut(0)
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_wqsvm7j', 'template_e5w3jd4', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                        // 送出資料後，清除input內容
+                        document.getElementById("contact-form").reset();
+
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+
+            });
+        }
+    </script>
+</body>
+
+</html>
