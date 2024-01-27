@@ -277,9 +277,33 @@
         })();
     </script>
     <script type="text/javascript">
-        $('.loadFixed').fadeOut(0)
+        // load 載入效果
+        // setInterval函式,秒數) 等待時間持續執行
+        // setTimeout(函式,秒數) 等待時間執行
+
+        // ready - 部分元素準備好，才執行
+        $(document).ready(function () {
+            setTimeout(function () {
+                // fadeOut(消失的秒數)
+                $('.loadFixed').fadeOut(500)
+            }, 2000)
+        })
+
+        // load - 所有元素都載入好，才執行
+        // $(window).on('load', function () {
+        //     setTimeout(function () {
+        //         // fadeOut(消失的秒數)
+        //         $('.loadFixed').fadeOut(500)
+        //     }, 2000)
+        // })
+
+
+        // 寄email
         window.onload = function () {
             document.getElementById('contact-form').addEventListener('submit', function (event) {
+                // 按下送出之後，叫出 載入效果
+                $('.loadFixed').fadeIn(500)
+
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
@@ -289,6 +313,9 @@
                         console.log('SUCCESS!');
                         // 送出資料後，清除input內容
                         document.getElementById("contact-form").reset();
+
+                        // 送出資料後， 載入效果 移除
+                        $('.loadFixed').fadeOut(500)
 
                     }, function (error) {
                         console.log('FAILED...', error);
